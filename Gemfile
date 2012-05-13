@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.3'
 gem 'pg'
 
-group :development do
+group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
 end
@@ -21,8 +21,10 @@ end
 gem 'jquery-rails'
 
 group :test do
-  gem 'rspec-rails'
+  gem 'cucumber-rails', '1.2.1', require: false
+  gem 'database_cleaner', '0.7.0'
   gem 'capybara'
+  gem 'factory_girl_rails', '1.4.0'
   gem 'rb-fsevent', :require => false
   gem 'growl'
   gem 'guard-spork'

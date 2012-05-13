@@ -17,7 +17,7 @@ development:
   encoding: unicode
   database: chi_squared_development
   pool: 5
-  username: chi_squared
+  username: briggszj
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -43,7 +43,7 @@ test:
   encoding: unicode
   database: chi_squared_test
   pool: 5
-  username: chi_squared
+  username: briggszj
   password:
 
 production:
@@ -51,5 +51,8 @@ production:
   encoding: unicode
   database: chi_squared_production
   pool: 5
-  username: chi_squared
+  username: briggszj
   password:
+
+  #  cucumber:
+  #<<: *TEST
