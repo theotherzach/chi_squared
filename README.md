@@ -1,0 +1,1 @@
+Runs a Chi-squared test and generates ranking.
