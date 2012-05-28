@@ -1,0 +1,55 @@
+<%= form_for(@tracking) do |f| %>
+  <% if @tracking.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tracking.errors.count, "error") %> prohibited this tracking from being saved:</h2>
+
+      <ul>
+      <% @tracking.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sourcefile %><br />
+    <%= f.text_field :sourcefile %>
+  </div>
+  <div class="field">
+    <%= f.label :filetype %><br />
+    <%= select(:tracking, :filetype, [['address info','address info'],['geography data','geography data'],['sales info','sales info']]) %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes, :rows=>4 %>
+  </div>
+  <div style="visibility: hidden; display: none;">
+	  <div class="field">
+	    <%= f.label :ftpqueue %><br />
+	    <%= f.datetime_select :ftpqueue %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :ftpstart %><br />
+	    <%= f.datetime_select :ftpstart %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :ftpcomplete %><br />
+	    <%= f.datetime_select :ftpcomplete %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :importqueue %><br />
+	    <%= f.datetime_select :importqueue %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :importstart %><br />
+	    <%= f.datetime_select :importstart %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :importcomplete %><br />
+	    <%= f.datetime_select :importcomplete %>
+	  </div>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

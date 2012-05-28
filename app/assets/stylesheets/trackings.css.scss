@@ -1,0 +1,15 @@
+// Place all the styles related to the Trackings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+th { background: #333; color: #fff; text-align: left;  padding: 2px; }
+th.import { background: #333; color: #fff; text-align: center;  padding: 2px; border-bottom: 1px solid #fff; }
+.filename { }
+.filetype { }
+.time { }
+
+.data { background: #fff; }
+.datab { background: #eee; }
+.data td, .datab td { padding: 0 12px 0 0; }
+
+.field { margin: 0; padding: 0; }
+.field label { margin:0; display: inline; }

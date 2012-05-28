@@ -11,24 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120519144012) do
+ActiveRecord::Schema.define(:version => 20120527174207) do
 
-  create_table "distribution", :force => true do |t|
-    t.string   "region"
-    t.string   "age"
-    t.decimal  "population"
-    t.decimal  "customer"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "distributions", :force => true do |t|
-    t.string   "site"
-    t.string   "age"
-    t.decimal  "population"
-    t.decimal  "customer"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+  create_table "trackings", :force => true do |t|
+    t.string   "sourcefile"
+    t.string   "filetype"
+    t.text     "notes"
+    t.datetime "ftpqueue"
+    t.datetime "ftpstart"
+    t.datetime "ftpcomplete"
+    t.datetime "importqueue"
+    t.datetime "importstart"
+    t.datetime "importcomplete"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
 end

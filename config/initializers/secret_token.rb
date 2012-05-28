@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-ChiSquared::Application.config.secret_token = 'a8617f961322bafe8a1f8a282e7dca86a4cbd48979d3dfea0df21e49c15db25dfe8b99738587220ba78d2f1bbc0d079293e560c0599b8b1d11be6da9093b7172'
+ChiSquared::Application.config.secret_token = '05b2d62499670ff0706712832790f96d5d28f6bc058c2bb6742edb4c05f3f0712e8bd94b9590cb2966eb5a404cc4cf718146e727b7c8bf3e6a2978365f7a0127'

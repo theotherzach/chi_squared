@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  sourcefile: MyString
+  filetype: MyString
+  notes: MyText
+  ftpqueue: 2012-05-27 13:42:07
+  ftpstart: 2012-05-27 13:42:07
+  ftpcomplete: 2012-05-27 13:42:07
+  importqueue: 2012-05-27 13:42:07
+  importstart: 2012-05-27 13:42:07
+  importcomplete: 2012-05-27 13:42:07
+
+two:
+  sourcefile: MyString
+  filetype: MyString
+  notes: MyText
+  ftpqueue: 2012-05-27 13:42:07
+  ftpstart: 2012-05-27 13:42:07
+  ftpcomplete: 2012-05-27 13:42:07
+  importqueue: 2012-05-27 13:42:07
+  importstart: 2012-05-27 13:42:07
+  importcomplete: 2012-05-27 13:42:07

@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Sourcefile:</b>
+  <%= @tracking.sourcefile %>
+</p>
+
+<p>
+  <b>Filetype:</b>
+  <%= @tracking.filetype %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @tracking.notes %>
+</p>
+
+<p>
+  <b>Ftpqueue:</b>
+  <%= @tracking.ftpqueue %>
+</p>
+
+<p>
+  <b>Ftpstart:</b>
+  <%= @tracking.ftpstart %>
+</p>
+
+<p>
+  <b>Ftpcomplete:</b>
+  <%= @tracking.ftpcomplete %>
+</p>
+
+<p>
+  <b>Importqueue:</b>
+  <%= @tracking.importqueue %>
+</p>
+
+<p>
+  <b>Importstart:</b>
+  <%= @tracking.importstart %>
+</p>
+
+<p>
+  <b>Importcomplete:</b>
+  <%= @tracking.importcomplete %>
+</p>
+
+
+<%= link_to 'Edit', edit_tracking_path(@tracking) %> |
+<%= link_to 'Back', trackings_path %>

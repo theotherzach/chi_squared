@@ -1,9 +1,5 @@
 ChiSquared::Application.routes.draw do
-  resources :distributions
-
-  root to: 'static_pages#home'
-
-
+  resources :trackings
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
