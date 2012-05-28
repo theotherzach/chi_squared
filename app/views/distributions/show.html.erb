@@ -1,0 +1,31 @@
+<%- model_class = @distribution.class -%>
+<h1><%=t '.title', :default => model_class.model_name.human %></h1>
+
+<p>
+  <strong><%= model_class.human_attribute_name(:site) %>:</strong><br>
+  <%= @distribution.site %>
+</p>
+<p>
+  <strong><%= model_class.human_attribute_name(:age) %>:</strong><br>
+  <%= @distribution.age %>
+</p>
+<p>
+  <strong><%= model_class.human_attribute_name(:population) %>:</strong><br>
+  <%= @distribution.population %>
+</p>
+<p>
+  <strong><%= model_class.human_attribute_name(:customer) %>:</strong><br>
+  <%= @distribution.customer %>
+</p>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              distributions_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_distribution_path(@distribution), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              distribution_path(@distribution),
+              :method => 'delete',
+              :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
+              :class => 'btn btn-danger' %>
+</div>

@@ -1,4 +1,6 @@
 ChiSquared::Application.routes.draw do
+  resources :distributions
+
   root to: 'static_pages#home'
 
 
