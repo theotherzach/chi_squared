@@ -2,14 +2,11 @@
 
 Test bed for a Web interface to perform basic database tasks. 
 
----
-
-# Remix! #
-
----
-
 ## V-0.2.0 ##
 ### Upload ###
+---
+### Remix! ###
+---
 Reboot, testing ability to load flat files into a MySQL database. Changed as little as possible to get it loaded.
 
 * Updated README
